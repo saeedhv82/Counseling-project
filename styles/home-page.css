@@ -37,6 +37,23 @@ a {
   text-decoration: none;
 }
 
+/* Animations */
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(39, 87, 255, 0.302);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-8px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(39, 87, 255, 0.3);
+    transform: translatey(0px);
+  }
+}
+
 /* Header style */
 
 .main-header {
@@ -106,22 +123,6 @@ a {
   background: var(--lighterBlue2-color);
   border: 3px dashed var(--lighterBlue2-color);
   transition: all 0.3s ease-in-out;
-}
-
-/* login button animation */
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 15px 0px rgba(39, 87, 255, 0.302);
-    transform: translatey(0px);
-  }
-  50% {
-    box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.2);
-    transform: translatey(-8px);
-  }
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(39, 87, 255, 0.3);
-    transform: translatey(0px);
-  }
 }
 
 .main-header-login-btn:hover {
@@ -309,9 +310,9 @@ a {
   }
 }
 
-/* Hero section style */
+/* Home page Hero section style */
 
-#hero-section {
+#home-page-hero-section {
   margin-bottom: 80px;
 }
 
@@ -386,10 +387,10 @@ a {
 }
 /* SVG style */
 
-.hero-section-svg-container{
+.home-page-hero-section-svg-container{
   width: 38vw;
 }
-.hero-section-svg-container svg {
+.home-page-hero-section-svg-container svg {
   width: 100%;
 }
 
@@ -420,7 +421,7 @@ a {
     padding-top: 100px;
     gap: 24px;
   }
-  .hero-section-svg-container{
+  .home-page-hero-section-svg-container{
     width: 80vw;
   }
   .hero-section-primary-button{
