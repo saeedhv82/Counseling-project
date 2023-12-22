@@ -6,6 +6,7 @@
     --textColor1-color: #1C1919;
     --textColor2-color: #2E2B2B;
     --Yellow-color: #FFD600;
+    --lighterYellow-color: #FFE55B;
     --darkerBlue-color: #2757ff;
     --lighterBlue-color: #5177ff;
     --lighterBlue2-color: #72a2ff;
@@ -183,7 +184,7 @@ a {
     color: var(--textColor1-color);
   }
   .main-header-login-btn:active {
-    background: linear-gradient(90deg, var(--lighterBlue-color) 0%, var(--darkerBlue-color) 100%, var(--darkerBlue-color) 100%);
+    background: linear-gradient(90deg, var(--lighterBlue-color) 0%, var(--darkerBlue-color) 100%);
   }
   
   .main-header-menu-container li:hover {
@@ -231,7 +232,7 @@ a {
       padding: 8px;
     }
     .main-header {
-      margin: 0 25px;
+      margin: 2vh 25px;
     }
     .main-header-logo-container {
       width: 50px;
@@ -505,9 +506,10 @@ a {
   .section-divider{
     width: 95vw;
     z-index: -1;
+    margin: 8vh auto;
   }
   .section-divider svg {
-    width: 100%;
+    width: 95vw;
   }
   .course-list-section-svg-container{
     width: 30vw;
