@@ -12,6 +12,7 @@
     --lighterBlue2-color: #72a2ff;
     --blogPostBackground-color: #F3F7FF;
     --blogPostHover-color: #DCE8FF;
+    --aliceBlue-color: #f0f8ff; 
 }
 
   /* Main style */
@@ -766,6 +767,8 @@ form > div:nth-child(1) > input:nth-child(1) {
   outline: none;
   cursor: text;
   animation: jelly 1s ease-in-out;
+  transform: scale(1.03);
+  box-shadow:-1px -1px 16px var(--aliceBlue-color);
 }
 
 .message-box textarea{
@@ -789,9 +792,11 @@ form > div:nth-child(1) > input:nth-child(1) {
   outline: none;
   cursor: text;
   animation: jelly 1s ease-in-out;
+  transform: scale(1.03);
+  box-shadow:-1px -1px 16px var(--aliceBlue-color);
 }
 
-.contact-page-form-button > input[type=button] {
+.contact-page-form-button > input[type=submit] {
   display: flex;
   padding: 8px 56px;
   justify-content: center;
@@ -808,7 +813,7 @@ form > div:nth-child(1) > input:nth-child(1) {
   transition: all 0.3s ease-in-out;
 }
 
-.contact-page-form-button > input[type=button]:hover {
+.contact-page-form-button > input[type=submit]:hover {
   background: linear-gradient(90deg, var(--lighterYellow-color) 0%, var(--lighterBlue-color) 100%);
   box-shadow: none;
   animation: buzz-out 1s ease-in-out;
@@ -838,7 +843,7 @@ form > div:nth-child(1) > input:nth-child(1) {
   .contact-page-form-svg-container {
     width: 24vw;
   }
-  .contact-page-form-button > input[type=button] {
+  .contact-page-form-button > input[type=submit] {
     font-size: 2vw;
   }
 }
@@ -872,7 +877,7 @@ form > div:nth-child(1) > input:nth-child(1) {
   .message-box textarea {
     min-height: 150px;
   }
-  .contact-page-form-button > input[type=button] {
+  .contact-page-form-button > input[type=submit] {
     font-size: 4vw;
   } 
 }

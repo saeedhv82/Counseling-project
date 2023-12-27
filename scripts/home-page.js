@@ -34,3 +34,24 @@ var swiper = new Swiper('.mySwiper', {
         },
     }
 })
+
+
+// var swiper2 = new Swiper('.mySwiper2', {
+//     slidesPerView: 2,
+//     spaceBetween: 10,
+//     grabCursor: true,
+//     breakpoints: {
+//         270: {
+//             slidesPerView: 1,
+//         },
+//         599: {
+//             slidesPerView: 2,
+//             spaceBetween: 20,
+//         },
+//         992: {
+//             slidesPerView: 2,
+//             spaceBetween: 30,
+//         },
+//     }
+// })
+
