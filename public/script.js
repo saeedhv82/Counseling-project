@@ -34,3 +34,5 @@ var swiper = new Swiper('.mySwiper', {
         },
     }
 })
+
+// Slider functionality
