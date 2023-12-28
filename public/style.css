@@ -851,6 +851,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+.card-image-container img {
+  width: 80%;
 }
 .card-content-divider {
   width: 50%;
