@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقاله های ما</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <!-- menu icon google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/8ef41f6dc0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-content">
+            <div id="menu-bar" class="burger-bg" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <div class="main-header-logo-container">
+                <a href="#"><img id="logo" class="main-header-logo-img"
+                        src="/Assets/Images/Logo.jpg" alt>
+                </a>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="main-header-menu-container">
+                    <a class="menuItem" href="#">
+                        <li>صفحه اصلی</li>
+                    </a>
+                    <a class="menuItem" href="#">
+                        <li>ارتباط با ما</li>
+                    </a>
+                    <a class="menuItem" href="#">
+                        <li>درباره ما</li>
+                    </a>
+                    <a class="menuItem" href="#">
+                        <li>بلاگ</li>
+                    </a>
+                    <a class="menuItem" href="#">
+                        <li id="course-list">لیست دوره ها</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="menu-bg" id="menu-bg"></div>
+            <div class="main-header-login-btn-container">
+                <a href="#"><span class="main-header-login-btn">ورود / ثبت
+                        نام</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="blog-template-grid-container">
+        <div class="current-page-address-container">
+            <div class="page-address-context">
+                <a href="#"> صفحه اصلی</a>
+            </div>
+            <div class="page-address-chevron">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="page-address-context">
+                <a href="#">بلاگ</a>
+            </div>
+            <div class="page-address-chevron">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="page-address-context">
+                <a href="#">دسته بندی مقاله</a>
+            </div>
+            <div class="page-address-chevron">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div id="current-page" class="page-address-context">
+                <a href="#">شما اینجا هستید</a>
+            </div>
+        </div>
+
+    </section>
+
+        
+
+    <script src="/public/script.js"></script>
+</body>
+</html>

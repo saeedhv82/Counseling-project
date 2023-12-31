@@ -13,6 +13,9 @@ function menuOnClick() {
 
 var swiper = new Swiper('.mySwiper', {
     slidesPerView: 2,
+    autoplay: {
+        delay: 2500,
+    },
     spaceBetween: 10,
     grabCursor: true,
     rewind: true,
@@ -73,7 +76,7 @@ const prevSlide = function () {
     goToSlide(curSlide)
 }
 
-setInterval (nextSlide, 4000);  
+setInterval (nextSlide, 5000);  
 
 btnRight.addEventListener('click', nextSlide);
 btnLeft.addEventListener('click', prevSlide);
