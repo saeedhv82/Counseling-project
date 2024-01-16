@@ -11,32 +11,38 @@ function menuOnClick() {
 
 // swiper slider 
 
-var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 2,
-    autoplay: {
-        delay: 2500,
-    },
-    spaceBetween: 10,
-    grabCursor: true,
-    rewind: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        pervEl: '.swiper-button-perv',
-    },
-    breakpoints: {
-        270: {
-            slidesPerView: 1,
+const mySwiper = document.querySelector(".mySwiper");
+
+if (mySwiper) {
+    var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 2,
+        autoplay: {
+            delay: 2500,
         },
-        599: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+        spaceBetween: 10,
+        grabCursor: true,
+        rewind: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            pervEl: '.swiper-button-perv',
         },
-        992: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-        },
-    }
-})
+        breakpoints: {
+            270: {
+                slidesPerView: 1,
+            },
+            599: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+        }
+    })
+}
+
+
 
 // Slider functionality
 
