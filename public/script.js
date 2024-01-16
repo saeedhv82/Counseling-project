@@ -83,6 +83,47 @@ if (btnRight || btnLeft) {
     btnLeft.addEventListener('click', prevSlide);
 }
 
+
+// Remember me functionality
+
+const rmCheck = document.getElementById("rememberMe");
+const numberInput = document.getElementById("phoneNumber");
+const rememberMeLabel = document.getElementById("rememberMeLabel");
+
+if (localStorage.checkbox && localStorage.checkbox !== "") {
+    rmCheck.setAttribute("checked", "checked");
+    numberInput.value = localStorage.username;
+  } else {
+    rmCheck.removeAttribute("checked");
+    numberInput.value = "";
+}
+
+function lsRememberMe() {
+    if (rmCheck.checked && numberInput.value !== "") {
+      localStorage.username = numberInput.value;
+      localStorage.checkbox = rmCheck.value;
+    } else {
+      localStorage.username = "";
+      localStorage.checkbox = "";
+    }
+}
+
+// visible password functionality 
+
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#password");
+
+togglePassword.addEventListener("click", function () {
+    // toggle the type attribute 
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+
+    // toggle the icon
+    this.classList.toggle("bi-eye");
+})
+
+
+
 $(".alert").delay(5000).fadeOut('fast');
 
 const day = document.querySelectorAll("span.day");
