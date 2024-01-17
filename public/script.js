@@ -96,21 +96,23 @@ const rmCheck = document.getElementById("rememberMe");
 const numberInput = document.getElementById("phoneNumber");
 const rememberMeLabel = document.getElementById("rememberMeLabel");
 
-if (localStorage.checkbox && localStorage.checkbox !== "") {
-    rmCheck.setAttribute("checked", "checked");
-    numberInput.value = localStorage.username;
-  } else {
-    rmCheck.removeAttribute("checked");
-    numberInput.value = "";
-}
-
-function lsRememberMe() {
-    if (rmCheck.checked && numberInput.value !== "") {
-      localStorage.username = numberInput.value;
-      localStorage.checkbox = rmCheck.value;
-    } else {
-      localStorage.username = "";
-      localStorage.checkbox = "";
+if(rmCheck) {
+    if (localStorage.checkbox && localStorage.checkbox !== "") {
+        rmCheck.setAttribute("checked", "checked");
+        numberInput.value = localStorage.username;
+      } else {
+        rmCheck.removeAttribute("checked");
+        numberInput.value = "";
+    }
+    
+    function lsRememberMe() {
+        if (rmCheck.checked && numberInput.value !== "") {
+          localStorage.username = numberInput.value;
+          localStorage.checkbox = rmCheck.value;
+        } else {
+          localStorage.username = "";
+          localStorage.checkbox = "";
+        }
     }
 }
 

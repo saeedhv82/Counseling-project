@@ -3694,3 +3694,20 @@ label[for=rememberMe]:hover {
     left: 4vw;
   }
 }
+
+/* -------------------------------------------------------- Register page --------------------------------------------------- */
+
+.register-form-register-title {
+  color: var(--pureWhite-color);
+}
+
+.register-form-login-title {
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.register-form-login-title:hover {
+  color: var(--Yellow-color);
+  opacity: 70%;
+}
+
+
