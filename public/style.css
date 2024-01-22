@@ -371,6 +371,17 @@ a {
 
 /* responsive header */
 
+@media only screen and (min-width: 1440px) {
+  .user-header-my-account {
+    font-size: 1.1vw;
+  }
+  .user-header-dropdown a {
+    font-size: 1vw;
+  }
+  .user-header-dropdown.hover input {
+    font-size: 1vw;
+  }
+}
 @media only screen and (max-width: 1080px) {
   .main-header-content {
     justify-content: space-between;
@@ -423,10 +434,10 @@ a {
     height: 50px;
   }
   .user-header-dropdown a {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
   .user-header-dropdown.hover input {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 }
 
@@ -445,10 +456,10 @@ a {
     padding: 8px;
   }
   .user-header-dropdown a {
-    font-size: 3.3vw;
+    font-size: 3.1vw;
   }
   .user-header-dropdown.hover input {
-    font-size: 3.3vw;
+    font-size: 3.1vw;
   }
   /* Styling responsive menu */
 
@@ -479,7 +490,7 @@ a {
     padding: 10px 5px;
     border-radius: 8px ;
     width: 35px;
-    margin: 20px 0 20px 30px;
+    margin: 20px 0 20px 50px;
     cursor: pointer;
     z-index: 2;
   }
