@@ -9,7 +9,7 @@ function menuOnClick() {
     document.getElementById("menu-bar").classList.toggle("burger-bg");
 }
 
-// swiper slider 
+// swiper slider
 
 const mySwiper = document.querySelector(".mySwiper");
 
@@ -121,17 +121,19 @@ if(rmCheck) {
 const togglePassword = document.querySelector("#togglePassword");
 const password = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function () {
-    // toggle the type attribute 
-    const type = password.getAttribute("type") === "password" ? "text" : "password";
-    password.setAttribute("type", type);
+if (togglePassword) {
+    togglePassword.addEventListener("click", function () {
+        // toggle the type attribute 
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+    
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+        password.focus()
+    })
+}
 
-    // toggle the icon
-    this.classList.toggle("bi-eye");
-    password.focus()
-})
-
-
+const csrf = document.getElementsByName('csrfmiddlewaretoken')
 
 $(".alert").delay(5000).fadeOut('fast');
 
@@ -231,4 +233,32 @@ if(month !== null) {
                 break;
         }
     });   
+}
+
+const comment_scores = document.querySelectorAll(".feedback label input")
+const form = document.querySelector("#course-comment-form")
+
+if (comment_scores) {
+    let val = null
+    comment_scores.forEach((score) => {
+        score.addEventListener("click", function() {
+            val = score.value
+        })
+    })
+    form.addEventListener('submit', e => {
+        const body = form.children[1].value
+        $.ajax({
+            type: 'POST',
+            url: window.location.pathname,
+            data: {
+                'csrfmiddlewaretoken': csrf[0].value,
+                'val': val,
+                'body': body,
+            },success : function(data) {
+                if(data['status'] == 'ok') {
+                    window.location.reload()
+                }
+            }
+        })
+    })
 }
